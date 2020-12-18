@@ -1,4 +1,4 @@
-**Remove carriage returns and extra spaces**
+**Remove carriage returns and extra spaces** <br/>
 cat nginx.hacked | perl -pe 's/\$/\\\$/g'  | perl -pe 's/\n/\\n/g' | perl -pe 's/ +/\ /g' > nginx.minified
 
 **Testing images locally**
